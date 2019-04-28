@@ -11,10 +11,10 @@ public class DesktopLauncher {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 
 		config.title = "UpDown";
-		config.width = 854;
-		config.height = 480;
+		config.width = 256 * Updown.WINDOW_SCALE; // SNES width
+		config.height = 224 * Updown.WINDOW_SCALE; // SNES height
 		config.fullscreen = false;
-		config.resizable = true;
+		config.resizable = false;
 //		config.addIcon(path, fileType);
 
 		config.initialBackgroundColor = Color.WHITE;
